@@ -11,37 +11,63 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Biomedical Engineering, Johns Hopkins University, 2026 (expected)
-* M.S. in Physics, University of Science and Technology of China, 2022
-* B.S. in Physics, University of Science and Technology of China, 2019
+* **Ph.D in Biomedical Engineering** 2022-present
 
-Work experience
+  Johns Hopkins University, Baltimore, MD, United States
+
+* **M.S. in Physics** 2019-2022
+
+  University of Science and Technology of China, Hefei, Anhui, China
+
+* **B.S. in Physics** 2015-2019
+
+  University of Science and Technology of China, Hefei, Anhui, China
+
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Assistant** May 2022-present
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  The Advanced Imaging Algorithms and Instrumentation Laboratory
   
-Skills
+  Johns Hopkins University, Baltimore, MD, United States
+
+* **Research Assistant** Aug 2020-May 2022
+
+  Precision Radiotherapy Laboratory
+  
+  University of Science and Technology of China, Hefei, Anhui, China
+
+* **Research Assistant** July 2017-Aug 2020
+
+  Medical Physics Laboratory
+  
+  University of Science and Technology of China, Hefei, Anhui, China
+
+Teaching experience
+======
+* **Teaching Assistant** 2025
+
+  Physics of Medical Imaging
+
+  Johns Hopkins University, Baltimore, MD, United States
+
+* **Teaching Assistant** 2017-2021
+
+  Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems
+
+  University of Science and Technology of China, Hefei, Anhui, China
+
+  
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -57,8 +83,8 @@ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
