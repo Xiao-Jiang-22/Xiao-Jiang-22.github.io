@@ -37,12 +37,12 @@ Supervisor: [Dr. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
 Teaching experience
 ======
 * **Teaching Assistant** <span style="float:right;">Aug 2025-Dec 2025</span>  
+Johns Hopkins University, Baltimore, MD, USA  
 Course: Physics of Medical Imaging  
-Johns Hopkins University, Baltimore, MD, USA 
 
 * **Teaching Assistant** <span style="float:right;">Aug 2017-June 2021</span>  
+University of Science and Technology of China, Hefei, Anhui, China  
 Courses: Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems  
-University of Science and Technology of China, Hefei, Anhui, China
 
   
 <!-- Skills
