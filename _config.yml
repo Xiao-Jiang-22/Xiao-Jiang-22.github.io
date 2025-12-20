@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Xiao Jiang"
+title                    : "Xiao Jiang's Personal Website"
 title_separator          : "-"
 name                     : &name "Xiao Jiang"
 description              : &description "Xiao Jiang's personal website"   # Update this with a general description of your site, this is the default if not overridden by a page
