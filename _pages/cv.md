@@ -18,7 +18,7 @@ Education
   [University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
 
 * **B.S. in Physics** <span style="float:right;">2015-2019</span>  
-[University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
+University of Science and Technology of China, Hefei, Anhui, China
 
 Research experience
 ======
