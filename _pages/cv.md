@@ -24,15 +24,15 @@ Research experience
 ======
 * **Research Assistant** <span style="float:right;">May 2022-present</span>  
 [The Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/), Johns Hopkins University, Baltimore, MD, United States  
-Supervisor: Prof. J. Webster Stayman
+Supervisor: [Prof. J. Webster Stayman](https://www.bme.jhu.edu/people/faculty/j-webster-stayman/)
 
 * **Research Assistant** <span style="float:right;">Aug 2020-May 2022</span>  
 Precision Radiotherapy Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
-Supervisor: Prof. Yidong Yang
+Supervisor: [Prof. Yidong Yang](https://fusep.ustc.edu.cn/2025/01/06/yidong-yang/)
 
 * **Research Assistant** <span style="float:right;">July 2017-Aug 2020</span>  
 Medical Physics Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
-Supervisor: Dr. Lei Zhu 
+Supervisor: [Dr. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
 
 Teaching experience
 ======
