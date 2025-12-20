@@ -25,7 +25,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
   <img src="../images/logo/jhu_logo.png"
        alt="Johns Hopkins University"
-       style="width:42px; height:auto; margin-top:4px;">
+       style="width:52px; height:auto; margin-top:4px;">
   <div style="flex:1;">
     <div style="display:flex; align-items:baseline; gap:12px;">
       <strong>Ph.D. in Biomedical Engineering</strong>
@@ -40,7 +40,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
   <img src="../images/logo/ustc_logo.png"
        alt="University of Science and Technology of China"
-       style="width:42px; height:auto; margin-top:4px;">
+       style="width:52px; height:auto; margin-top:4px;">
   <div style="flex:1;">
     <div style="display:flex; align-items:baseline; gap:12px;">
       <strong>M.S. in Physics</strong>
@@ -55,7 +55,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 <div style="display:flex; align-items:flex-start; gap:14px;">
   <img src="../images/logo/ustc_logo.png"
        alt="University of Science and Technology of China"
-       style="width:42px; height:auto; margin-top:4px;">
+       style="width:52px; height:auto; margin-top:4px;">
   <div style="flex:1;">
     <div style="display:flex; align-items:baseline; gap:12px;">
       <strong>B.S. in Physics</strong>
@@ -66,6 +66,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
     </div>
   </div>
 </div>
+<div style="margin-top: 1.5em;"></div>
 
 
 Professinal Experience
