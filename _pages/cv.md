@@ -53,7 +53,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 </div>
 
 <div style="display:flex; align-items:flex-start; gap:14px;">
-  <img src="{{ base_path }}/images/logos/ustc.png"
+  <img src="{{ base_path }}/images/logo/ustc_logo.png"
        alt="University of Science and Technology of China"
        style="width:42px; height:auto; margin-top:4px;">
   <div style="flex:1;">
