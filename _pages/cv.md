@@ -37,11 +37,11 @@ University of Science and Technology of China, Hefei, Anhui, China
 Teaching experience
 ======
 * **Teaching Assistant** <span style="float:right;">Aug 2025-Dec 2025</span>  
-Physics of Medical Imaging  
+Course: Physics of Medical Imaging  
 Johns Hopkins University, Baltimore, MD, United States
 
 * **Teaching Assistant** <span style="float:right;">Aug 2017-June 2021</span>  
-Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems  
+Courses: Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems  
 University of Science and Technology of China, Hefei, Anhui, China
 
   
