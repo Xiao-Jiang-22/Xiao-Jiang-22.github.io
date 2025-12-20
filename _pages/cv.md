@@ -11,33 +11,33 @@ redirect_from:
 
 Education
 ======
-* **Ph.D in Biomedical Engineering** 2022-present
+* **Ph.D in Biomedical Engineering** <span style="float:right;">2022-present</span>  
 
   Johns Hopkins University, Baltimore, MD, United States
 
-* **M.S. in Physics** 2019-2022
+* **M.S. in Physics** <span style="float:right;">2019-2022</span> 
 
   University of Science and Technology of China, Hefei, Anhui, China
 
-* **B.S. in Physics** 2015-2019
+* **B.S. in Physics** <span style="float:right;">2015-2019</span> 
 
   University of Science and Technology of China, Hefei, Anhui, China
 
 Research experience
 ======
-* **Research Assistant** May 2022-present
+* **Research Assistant** <span style="float:right;">May 2022-present</span> 
 
   The Advanced Imaging Algorithms and Instrumentation Laboratory
   
   Johns Hopkins University, Baltimore, MD, United States
 
-* **Research Assistant** Aug 2020-May 2022
+* **Research Assistant** <span style="float:right;">Aug 2020-May 2022</span> 
 
   Precision Radiotherapy Laboratory
   
   University of Science and Technology of China, Hefei, Anhui, China
 
-* **Research Assistant** July 2017-Aug 2020
+* **Research Assistant** <span style="float:right;">July 2017-Aug 2020</span> 
 
   Medical Physics Laboratory
   
@@ -45,13 +45,13 @@ Research experience
 
 Teaching experience
 ======
-* **Teaching Assistant** 2025
+* **Teaching Assistant** <span style="float:right;">Aug 2025-Dec 2025</span> 
 
   Physics of Medical Imaging
 
   Johns Hopkins University, Baltimore, MD, United States
 
-* **Teaching Assistant** 2017-2021
+* **Teaching Assistant** <span style="float:right;">Aug 2017-June 2021</span> 
 
   Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems
 
