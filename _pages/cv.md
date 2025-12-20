@@ -23,7 +23,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 ## Education
 
 <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
-  <img src="{{ base_path }}/images/logo/jhu_logo.png"
+  <img src="../images/logo/jhu_logo.png"
        alt="Johns Hopkins University"
        style="width:42px; height:auto; margin-top:4px;">
   <div style="flex:1;">
@@ -38,7 +38,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 </div>
 
 <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
-  <img src="{{ base_path }}/images/logo/ustc_logo.png"
+  <img src="../images/logo/ustc_logo.png"
        alt="University of Science and Technology of China"
        style="width:42px; height:auto; margin-top:4px;">
   <div style="flex:1;">
