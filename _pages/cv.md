@@ -20,7 +20,7 @@ Education
 * **B.S. in Physics** <span style="float:right;">2015-2019</span>  
 University of Science and Technology of China, Hefei, Anhui, China
 
-Research experience
+Professinal Experience
 ======
 * **Research Assistant** <span style="float:right;">May 2022-present</span>  
 [Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/), Johns Hopkins University, Baltimore, MD, USA 
@@ -34,7 +34,25 @@ Supervisor: [Prof. Yidong Yang](https://fusep.ustc.edu.cn/2025/01/06/yidong-yang
 Medical Physics Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
 Supervisor: [Dr. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
 
-Teaching experience
+
+Review Activities
+======
+* [IEEE Transactions on Medical Imaging](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)
+
+* [IEEE Transactions on Biomedical Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10)
+
+* [IEEE Transactions on Nuclear Science](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=23)
+
+* [Medical Physics](https://aapm.onlinelibrary.wiley.com/journal/24734209)
+
+* [Artificial Intelligence in Medicine](https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine)
+
+* **Teaching Assistant** <span style="float:right;">Aug 2017-June 2021</span>  
+University of Science and Technology of China, Hefei, Anhui, China  
+Courses: Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems  
+
+
+Teaching Experience
 ======
 * **Teaching Assistant** <span style="float:right;">Aug 2025-Dec 2025</span>  
 Johns Hopkins University, Baltimore, MD, USA  
