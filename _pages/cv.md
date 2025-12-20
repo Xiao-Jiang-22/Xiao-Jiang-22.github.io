@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * **Ph.D in Biomedical Engineering** <span style="float:right;">2022-present</span>  
-  [Johns Hopkins University](https://www.jhu.edu/), Baltimore, MD, United States
+  [Johns Hopkins University](https://www.jhu.edu/), Baltimore, MD, USA 
 
 * **M.S. in Physics** <span style="float:right;">2019-2022</span>  
   [University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
@@ -23,7 +23,7 @@ University of Science and Technology of China, Hefei, Anhui, China
 Research experience
 ======
 * **Research Assistant** <span style="float:right;">May 2022-present</span>  
-[The Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/), Johns Hopkins University, Baltimore, MD, United States  
+[Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/), Johns Hopkins University, Baltimore, MD, USA 
 Supervisor: [Prof. J. Webster Stayman](https://www.bme.jhu.edu/people/faculty/j-webster-stayman/)
 
 * **Research Assistant** <span style="float:right;">Aug 2020-May 2022</span>  
@@ -38,7 +38,7 @@ Teaching experience
 ======
 * **Teaching Assistant** <span style="float:right;">Aug 2025-Dec 2025</span>  
 Course: Physics of Medical Imaging  
-Johns Hopkins University, Baltimore, MD, United States
+Johns Hopkins University, Baltimore, MD, USA 
 
 * **Teaching Assistant** <span style="float:right;">Aug 2017-June 2021</span>  
 Courses: Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems  
