@@ -13,21 +13,21 @@ Education
 ======
 * **Ph.D in Biomedical Engineering** <span style="float:right;">2022-present</span>  
 
-  Johns Hopkins University, Baltimore, MD, United States
+  [Johns Hopkins University](https://www.jhu.edu/), Baltimore, MD, United States
 
 * **M.S. in Physics** <span style="float:right;">2019-2022</span> 
 
-  University of Science and Technology of China, Hefei, Anhui, China
+  [University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
 
 * **B.S. in Physics** <span style="float:right;">2015-2019</span> 
 
-  University of Science and Technology of China, Hefei, Anhui, China
+  [University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
 
 Research experience
 ======
 * **Research Assistant** <span style="float:right;">May 2022-present</span> 
 
-  The Advanced Imaging Algorithms and Instrumentation Laboratory
+  [The Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/)
   
   Johns Hopkins University, Baltimore, MD, United States
 
