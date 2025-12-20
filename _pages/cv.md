@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<br></br>
+
 Education
 ======
 * **Ph.D in Biomedical Engineering** <span style="float:right;">2022-present</span>  
@@ -22,6 +24,8 @@ Education
 * **B.S. in Physics** <span style="float:right;">2015-2019</span> 
 
   [University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
+
+<br></br>
 
 Research experience
 ======
@@ -42,6 +46,8 @@ Research experience
   Medical Physics Laboratory
   
   University of Science and Technology of China, Hefei, Anhui, China
+
+<br></br>
 
 Teaching experience
 ======
