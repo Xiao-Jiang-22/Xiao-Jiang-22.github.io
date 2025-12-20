@@ -83,6 +83,7 @@ Supervisor: [Prof. Yidong Yang](https://fusep.ustc.edu.cn/2025/01/06/yidong-yang
 Medical Physics Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
 Supervisor: [Dr. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
 
+<div style="margin-top: 1.5em;"></div>
 
 Review Activities
 ======
@@ -92,6 +93,7 @@ Review Activities
 * [Medical Physics](https://aapm.onlinelibrary.wiley.com/journal/24734209)  
 * [Artificial Intelligence in Medicine](https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine)
 
+<div style="margin-top: 1.5em;"></div>
 
 Teaching Experience
 ======
