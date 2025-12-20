@@ -69,7 +69,7 @@ University of Science and Technology of China, Hefei, Anhui, China -->
 <div style="margin-top: 1.5em;"></div>
 
 
-Professinal Experience
+Professional Experience
 ======
 * **Research Assistant** <span style="float:right;">May 2022-present</span>  
 [Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/), Johns Hopkins University, Baltimore, MD, USA 
