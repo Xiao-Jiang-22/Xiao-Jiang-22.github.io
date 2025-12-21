@@ -15,7 +15,7 @@ Currently, I conduct my research in the [AIAI](https://aiai.jhu.edu/) Lab at Joh
 
 Before coming to Hopkins, I spent seven years at [University of Science and Technology of China](https://www.ustc.edu.cn/) studying physics, where I earned both my bachelor and master degrees. During this period, I developed a strong interest in medical imaging and had the opportunity to conduct research in CT imaging and image-guided radiotherapy. I am deeply grateful to [Prof. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b) and [Prof. Yidong Yang](https://fusep.ustc.edu.cn/2025/01/06/yidong-yang/) for their invaluable guidance.
 
-If you are interested in my work or would like to explore potential collaborations, please feel free to contact me at [xjiang43@jhu.edu](xjiang43@jhu.edu)
+If you are interested in my work or would like to explore potential collaborations, please feel free to contact me at [xjiang43@jhu.edu](xjiang43@jhu.edu).
 
 
 Highlight
