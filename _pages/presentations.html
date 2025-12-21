@@ -15,11 +15,11 @@ author_profile: true
 {% endif %}
 
 <p style="margin: 0.3em 0 1.2em 0;">
-  <em>Publications are listed in reverse chronological order (most recent first).</em>
+  <em>presentations are listed in reverse chronological order (most recent first).</em>
 </p>
 
 <style>
-  /* Publications page card style (scoped) */
+  /* presentations page card style (scoped) */
   .pub-card {
     margin: 1.4em 0;
     padding: 0;
@@ -99,7 +99,7 @@ author_profile: true
 </style>
 
 {% comment %}
-Helper renderer for one publication card.
+Helper renderer for one presentation card.
 - Title is NOT a link by default.
 - If you want title clickable to the paper page, replace:
     <div class="pub-title">{{ post.title }}</div>
@@ -107,13 +107,13 @@ Helper renderer for one publication card.
     <div class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
 {% endcomment %}
 
-{% if site.publication_category %}
+{% if site.presentation_category %}
 
-  {% for category in site.publication_category %}
+  {% for category in site.presentation_category %}
     <h2 style="margin-top: 1.2em;">{{ category[1].title }}</h2>
     <hr />
 
-    {% for post in site.publications reversed %}
+    {% for post in site.presentations reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -171,7 +171,7 @@ Helper renderer for one publication card.
 
 {% else %}
 
-  {% for post in site.publications reversed %}
+  {% for post in site.presentations reversed %}
     <div class="pub-card">
       <!-- Title (not clickable by default) -->
       <div class="pub-title">{{ post.title }}</div>
