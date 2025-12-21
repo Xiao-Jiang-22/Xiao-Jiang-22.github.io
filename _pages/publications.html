@@ -59,6 +59,20 @@ author_profile: true
     border-radius: 14px;
   }
 
+  /* multiple images (side-by-side) */
+  .pub-fig-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 80%;          /* 👈 控制整体宽度 */
+    margin: 0.8em auto 1em auto;
+  }
+
+  .pub-fig-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
 
   .pub-authors {
   font-weight: 500;
@@ -130,14 +144,20 @@ Helper renderer for one publication card.
           {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
           {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
         </div>
-        
+
         <!-- Description -->
         {% if post.excerpt %}
           <div class="pub-desc">{{ post.excerpt }}</div>
         {% endif %}
 
         <!-- Figure (below description) -->
-        {% if post.image %}
+        {% if post.images %}
+          <div class="pub-fig-grid">
+            {% for img in post.images %}
+              <img src="{{ img | relative_url }}" alt="{{ post.title }} figure {{ forloop.index }}">
+            {% endfor %}
+          </div>
+        {% elsif post.image %}
           <div class="pub-fig">
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
           </div>
