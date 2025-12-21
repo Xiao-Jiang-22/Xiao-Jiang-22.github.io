@@ -41,7 +41,9 @@ author_profile: true
   .pub-desc {
     margin: 0.4em 0 0.6em 0;
     line-height: 1.6;
+    font-size: 0.85em; 
   }
+
 
   /* Figure below description */
   .pub-fig {
@@ -49,12 +51,23 @@ author_profile: true
   }
 
   .pub-fig img {
-    max-width: 460px;   /* change to 380/420/520 if you prefer */
+    max-width: none;   /* change to 380/420/520 if you prefer */
     width: 100%;
     height: auto;
     border-radius: 12px;
     display: block;
   }
+
+  .pub-authors {
+  font-weight: 500;
+  margin: 0.15em 0 0.15em 0;
+  }
+
+  .pub-venue {
+    color: #666;
+    margin-bottom: 0.35em;
+  }
+
 
   .pub-links a {
     margin-right: 12px;
@@ -138,15 +151,20 @@ Helper renderer for one publication card.
       <div class="pub-title">{{ post.title }}</div>
 
       <!-- Meta: Authors · Venue · Year -->
-      <div class="pub-meta">
-        {% if post.authors %}{{ post.authors }}{% endif %}
-        {% if post.venue %}
-          {% if post.authors %} · {% endif %}<i>{{ post.venue }}</i>
-        {% endif %}
-        {% if post.date %}
-          {% if post.authors or post.venue %} · {% endif %}{{ post.date | date: "%Y" }}
-        {% endif %}
-      </div>
+      <!-- Authors (one row) -->
+      {% if post.authors %}
+        <div class="pub-authors">
+          {{ post.authors }}
+        </div>
+      {% endif %}
+
+      <!-- Venue + Year (one row) -->
+      {% if post.venue or post.date %}
+        <div class="pub-venue">
+          {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+          {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+        </div>
+      {% endif %}
 
       <!-- Description -->
       {% if post.excerpt %}
