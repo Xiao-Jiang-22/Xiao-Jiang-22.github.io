@@ -6,6 +6,7 @@ date: 2023-10-13
 type: "Poster"
 authors: "Xiao Jiang, Grace J. Gang, J. Webster Stayman"
 venue: "17th International Meeting on Fully 3D Image Reconstruction in Radiology and Nuclear Medicine"
+notes: “✨ Best poster award”
 paperurl: "https://arxiv.org/abs/2310.16846v3"
 ---
 
