@@ -1,12 +1,12 @@
 ---
-title: "Joint estimation of anatomy and implants in x-ray CT using a mixed prior model"
+title: "Multi-material Decomposition with Triple Layer Flat-Panel Detector CBCT using Model-based and Deep Learning Approaches"
 collection: presentations
 category: conferences
-date: 2025-04-08
-type: "Oral"
+date: 2023-10-13
+type: "Poster"
 authors: "Xiao Jiang, Grace J. Gang, J. Webster Stayman"
-venue: "7th International Conference on Image Formation in X-Ray Computed Tomography"
-paperurl: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13405/134051I/Joint-estimation-of-anatomy-and-implants-in-x-ray-CT/10.1117/12.3046496.full"
+venue: "17th International Meeting on Fully 3D Image Reconstruction in Radiology and Nuclear Medicine"
+paperurl: "https://arxiv.org/abs/2310.16846v3"
 ---
 
 

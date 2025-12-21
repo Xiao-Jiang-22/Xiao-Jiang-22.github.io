@@ -1,12 +1,12 @@
 ---
-title: "Joint estimation of anatomy and implants in x-ray CT using a mixed prior model"
+title: "Volumetric Material Decomposition Using Spectral Diffusion Posterior Sampling with a Compressed Polychromatic Forward Model"
 collection: presentations
 category: conferences
-date: 2025-04-08
+date: 2025-03-28
 type: "Oral"
 authors: "Xiao Jiang, Grace J. Gang, J. Webster Stayman"
-venue: "SPIE Medical Imaging: Physics of Medical Imaging"
-paperurl: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13405/134051I/Joint-estimation-of-anatomy-and-implants-in-x-ray-CT/10.1117/12.3046496.full"
+venue: "18th International Meeting on Fully 3D Image Reconstruction in Radiology and Nuclear Medicine"
+paperurl: "https://arxiv.org/abs/2503.22392"
 ---
 
 
