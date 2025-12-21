@@ -59,6 +59,10 @@ author_profile: true
     color: #333;
   }
 
+  .pres-type {
+    font-weight: 700;   /* 加粗 type */
+  }
+
   /* Figure below description */
   .pub-fig { margin: 0.7em 0 0.9em 0; }
   .pub-fig img {
@@ -188,7 +192,7 @@ If you sometimes write "Jiang, X" on the site, add another replace line.
       <!-- Line 2: Type | Venue -->
       {% if post.type or post.venue %}
         <div class="pres-line">
-          {% if post.type %}{{ post.type }}{% endif %}
+          {% if post.type %}<span class="pres-type">{{ post.type }}</span>{% endif %}
           {% if post.type and post.venue %} | {% endif %}
           {% if post.venue %}{{ post.venue }}{% endif %}
           {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
