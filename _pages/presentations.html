@@ -20,10 +20,7 @@ author_profile: true
 
 <style>
   /* presentations page card style (scoped) */
-  .pub-card {
-    margin: 1.4em 0;
-    padding: 0;
-  }
+  .pub-card { margin: 1.4em 0; padding: 0; }
 
   .pub-title {
     font-weight: 700;
@@ -32,63 +29,55 @@ author_profile: true
     margin: 0 0 0.25em 0;
   }
 
-  .pub-meta {
+  /* === NEW: the 3 lines under title share the same typography === */
+  .pres-line {
+    font-size: 0.95em;     /* 三行同字号 */
+    line-height: 1.45;
+    margin: 0.12em 0;      /* 三行同间距 */
     color: #666;
-    margin: 0 0 0.6em 0;
-    line-height: 1.35;
   }
+
+  /* your name highlight */
+  .pres-line .me {
+    font-weight: 700;
+    text-decoration: underline;
+    color: inherit; /* keep same color */
+  }
+
+  /* links row */
+  .pres-links a {
+    margin-right: 12px;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .pres-links a:hover { text-decoration: underline; }
 
   .pub-desc {
-    margin: 0.4em 0 0.6em 0;
+    margin: 0.45em 0 0.65em 0;
     line-height: 1.6;
-    font-size: 0.85em; 
+    font-size: 0.85em;
+    color: #333;
   }
-
 
   /* Figure below description */
-  .pub-fig {
-    margin: 0.7em 0 0.9em 0;
-  }
-
+  .pub-fig { margin: 0.7em 0 0.9em 0; }
   .pub-fig img {
     display: block;
-    margin: 0.6em auto 0.8em auto;  /* 上下留白 + 水平居中 */
-    width: 100%;                    /* 在小屏下仍可自适应 */
-    max-width: 80%;                 /* 👈 核心：最多占 60% 列宽 */
+    margin: 0.6em auto 0.8em auto;
+    width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 14px;
   }
 
-  /* multiple images (side-by-side) */
   .pub-fig-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    max-width: 80%;          /* 👈 控制整体宽度 */
+    max-width: 80%;
     margin: 0.8em auto 1em auto;
   }
-
-  .pub-fig-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .pub-authors {
-  font-weight: 500;
-  margin: 0.15em 0 0.15em 0;
-  }
-
-  .pub-venue {
-    color: #666;
-    margin-bottom: 0.35em;
-  }
-
-
-  .pub-links a {
-    margin-right: 12px;
-    white-space: nowrap;
-  }
+  .pub-fig-grid img { width: 100%; height: auto; border-radius: 12px; }
 
   /* subtle divider */
   .pub-divider {
@@ -99,13 +88,11 @@ author_profile: true
 </style>
 
 {% comment %}
-Helper renderer for one presentation card.
-- Title is NOT a link by default.
-- If you want title clickable to the paper page, replace:
-    <div class="pub-title">{{ post.title }}</div>
-  with:
-    <div class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+Helper: highlight your name inside authors string.
+- Replace "Xiao Jiang" -> <span class="me">Xiao Jiang</span>
+If you sometimes write "Jiang, X" on the site, add another replace line.
 {% endcomment %}
+{% assign myname = "Xiao Jiang" %}
 
 {% if site.presentation_category %}
 
@@ -119,38 +106,51 @@ Helper renderer for one presentation card.
       {% endif %}
 
       <div class="pub-card">
-        <!-- Title (not clickable by default) -->
+        <!-- Title -->
         <div class="pub-title">{{ post.title }}</div>
 
-        <!-- Authors (one row) -->
+        <!-- Line 1: Authors -->
         {% if post.authors %}
-          <div class="pub-authors">
-            {{ post.authors }}
+          {% assign authors_html = post.authors
+            | replace: myname, '<span class="me">' | append: myname | append: '</span>' %}
+          {%- comment -%}
+          The above append trick doesn't work as intended in Liquid.
+          We'll do a safer replace below.
+          {%- endcomment -%}
+          {% assign authors_html = post.authors | replace: myname, '<span class="me">Xiao Jiang</span>' %}
+          {% assign authors_html = authors_html | replace: "Jiang, X", '<span class="me">Jiang, X</span>' %}
+
+          <div class="pres-line">
+            {{ authors_html }}
           </div>
         {% endif %}
 
-        <!-- Venue + Year (one row) -->
-        {% if post.venue or post.date %}
-          <div class="pub-venue">
-            {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+        <!-- Line 2: Type | Venue -->
+        {% if post.type or post.venue %}
+          <div class="pres-line">
+            {% if post.type %}{{ post.type }}{% endif %}
+            {% if post.type and post.venue %} | {% endif %}
+            {% if post.venue %}{{ post.venue }}{% endif %}
             {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
           </div>
         {% endif %}
 
-        <!-- Links -->
-        <div class="pub-links">
-          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
-          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
-          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
-          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
-        </div>
+        <!-- Line 3: Links (Paper first) -->
+        {% if post.paperurl or post.slidesurl or post.codeurl or post.bibtexurl %}
+          <div class="pres-line pres-links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+            {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+            {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+            {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
+          </div>
+        {% endif %}
 
         <!-- Description -->
         {% if post.excerpt %}
           <div class="pub-desc">{{ post.excerpt }}</div>
         {% endif %}
 
-        <!-- Figure (below description) -->
+        <!-- Figures -->
         {% if post.images %}
           <div class="pub-fig-grid">
             {% for img in post.images %}
@@ -173,22 +173,35 @@ Helper renderer for one presentation card.
 
   {% for post in site.presentations reversed %}
     <div class="pub-card">
-      <!-- Title (not clickable by default) -->
+      <!-- Title -->
       <div class="pub-title">{{ post.title }}</div>
 
-      <!-- Meta: Authors · Venue · Year -->
-      <!-- Authors (one row) -->
+      <!-- Line 1: Authors -->
       {% if post.authors %}
-        <div class="pub-authors">
-          {{ post.authors }}
+        {% assign authors_html = post.authors | replace: myname, '<span class="me">Xiao Jiang</span>' %}
+        {% assign authors_html = authors_html | replace: "Jiang, X", '<span class="me">Jiang, X</span>' %}
+        <div class="pres-line">
+          {{ authors_html }}
         </div>
       {% endif %}
 
-      <!-- Venue + Year (one row) -->
-      {% if post.venue or post.date %}
-        <div class="pub-venue">
-          {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+      <!-- Line 2: Type | Venue -->
+      {% if post.type or post.venue %}
+        <div class="pres-line">
+          {% if post.type %}{{ post.type }}{% endif %}
+          {% if post.type and post.venue %} | {% endif %}
+          {% if post.venue %}{{ post.venue }}{% endif %}
           {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+        </div>
+      {% endif %}
+
+      <!-- Line 3: Links -->
+      {% if post.paperurl or post.slidesurl or post.codeurl or post.bibtexurl %}
+        <div class="pres-line pres-links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
         </div>
       {% endif %}
 
@@ -197,20 +210,12 @@ Helper renderer for one presentation card.
         <div class="pub-desc">{{ post.excerpt }}</div>
       {% endif %}
 
-      <!-- Figure (below description) -->
+      <!-- Figure -->
       {% if post.image %}
         <div class="pub-fig">
           <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
         </div>
       {% endif %}
-
-      <!-- Links -->
-      <div class="pub-links">
-        {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
-        {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
-        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
-        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
-      </div>
 
       <hr class="pub-divider" />
     </div>
