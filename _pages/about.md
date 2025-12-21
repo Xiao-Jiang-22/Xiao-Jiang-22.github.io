@@ -20,4 +20,4 @@ If you are interested in my work or would like to explore potential collaboratio
 
 Highlight
 ======
-zxxx
+CTorch Projector Toolbox: arXiv description, GitHub Repository (restricted access): The AIAI lab is making the GPU-accelerated, auto-differentiable projectors and related code that we use in our research available to the imaging community for non-commercial, non-profit research. Please contact web.stayman@jhu.edu for access.

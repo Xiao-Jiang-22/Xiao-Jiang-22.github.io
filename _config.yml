@@ -87,12 +87,12 @@ publication_category:
   # books:
   #   title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal & Preprint Articles'    
   conferences:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+teaser                   : # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
