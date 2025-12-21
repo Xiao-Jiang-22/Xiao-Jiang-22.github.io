@@ -132,7 +132,7 @@ If you sometimes write "Jiang, X" on the site, add another replace line.
         <!-- Line 2: Type | Venue -->
         {% if post.type or post.venue %}
           <div class="pres-line">
-            {% if post.type %}{{ post.type }}{% endif %}
+            {% if post.type %}<span class="pres-type">{{ post.type }}</span>{% endif %}
             {% if post.type and post.venue %} | {% endif %}
             {% if post.venue %}{{ post.venue }}{% endif %}
             {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
