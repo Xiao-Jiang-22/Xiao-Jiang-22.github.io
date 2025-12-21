@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am Xiao Jiang (姜潇)!
+Hi, I am Xiao Jiang!
 
 I am a Ph.D. student in Biomedical Engineering at Johns Hopkins University. I am broadly interested in medical imaging technologies, including system design and optimization, physics-based modeling, image reconstruction theory, and AI-driven imaging algorithms.
 
