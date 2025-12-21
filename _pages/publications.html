@@ -106,16 +106,21 @@ Helper renderer for one publication card.
         <!-- Title (not clickable by default) -->
         <div class="pub-title">{{ post.title }}</div>
 
-        <!-- Meta: Authors · Venue · Year -->
-        <div class="pub-meta">
-          {% if post.authors %}{{ post.authors }}{% endif %}
-          {% if post.venue %}
-            {% if post.authors %} · {% endif %}<i>{{ post.venue }}</i>
-          {% endif %}
-          {% if post.date %}
-            {% if post.authors or post.venue %} · {% endif %}{{ post.date | date: "%Y" }}
-          {% endif %}
-        </div>
+        <!-- Authors (one row) -->
+        {% if post.authors %}
+          <div class="pub-authors">
+            {{ post.authors }}
+          </div>
+        {% endif %}
+
+        <!-- Venue + Year (one row) -->
+        {% if post.venue or post.date %}
+          <div class="pub-venue">
+            {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+            {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+          </div>
+        {% endif %}
+
 
         <!-- Description -->
         {% if post.excerpt %}
