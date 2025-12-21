@@ -95,6 +95,8 @@ presentation_category:
   invited talks:
     title: 'Invited Talks'
 
+author_name: "Xiao Jiang"
+
 # Site Settings
 teaser                   : # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
