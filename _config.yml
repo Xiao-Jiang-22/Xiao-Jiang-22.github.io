@@ -26,9 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Xiao Jiang"
   pronouns         : # example: "she/her"  
-  bio: |
-    PhD @ JHU BME  
-    MS/BS @ USTC Phys
+  bio              : "PhD @ JHU BME<br>MS/BS @ USTC Phys"
   location         : "Baltimore, MD, USA"
   employer         : "Johns Hopkins University"
   uri              : # URL
