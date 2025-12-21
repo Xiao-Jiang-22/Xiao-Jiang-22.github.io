@@ -52,13 +52,13 @@ author_profile: true
 
   .pub-fig img {
     display: block;
-    margin: 0 auto;
-    max-width: 600px;   /* change to 380/420/520 if you prefer */
-    width: 100%;
+    margin: 0.6em auto 0.8em auto;  /* 上下留白 + 水平居中 */
+    width: 100%;                    /* 在小屏下仍可自适应 */
+    max-width: 60%;                 /* 👈 核心：最多占 60% 列宽 */
     height: auto;
-    border-radius: 12px;
-    display: block;
+    border-radius: 14px;
   }
+
 
   .pub-authors {
   font-weight: 500;
