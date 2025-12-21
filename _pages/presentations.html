@@ -5,32 +5,215 @@ permalink: /presentations/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if presentation categories are defined -->
-{% if site.presentation_category %}
-  {% for category in site.presentation_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.presentations reversed %}
+{% if site.author.googlescholar %}
+  <div class="wordwrap" style="margin-bottom: 0.8em;">
+    You can also find my articles on
+    <a href="{{ site.author.googlescholar }}" target="_blank">my Google Scholar profile</a>.
+  </div>
+{% endif %}
+
+<p style="margin: 0.3em 0 1.2em 0;">
+  <em>Publications are listed in reverse chronological order (most recent first).</em>
+</p>
+
+<style>
+  /* Publications page card style (scoped) */
+  .pub-card {
+    margin: 1.4em 0;
+    padding: 0;
+  }
+
+  .pub-title {
+    font-weight: 700;
+    font-size: 1.08em;
+    line-height: 1.35;
+    margin: 0 0 0.25em 0;
+  }
+
+  .pub-meta {
+    color: #666;
+    margin: 0 0 0.6em 0;
+    line-height: 1.35;
+  }
+
+  .pub-desc {
+    margin: 0.4em 0 0.6em 0;
+    line-height: 1.6;
+    font-size: 0.85em; 
+  }
+
+
+  /* Figure below description */
+  .pub-fig {
+    margin: 0.7em 0 0.9em 0;
+  }
+
+  .pub-fig img {
+    display: block;
+    margin: 0.6em auto 0.8em auto;  /* 上下留白 + 水平居中 */
+    width: 100%;                    /* 在小屏下仍可自适应 */
+    max-width: 80%;                 /* 👈 核心：最多占 60% 列宽 */
+    height: auto;
+    border-radius: 14px;
+  }
+
+  /* multiple images (side-by-side) */
+  .pub-fig-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 80%;          /* 👈 控制整体宽度 */
+    margin: 0.8em auto 1em auto;
+  }
+
+  .pub-fig-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .pub-authors {
+  font-weight: 500;
+  margin: 0.15em 0 0.15em 0;
+  }
+
+  .pub-venue {
+    color: #666;
+    margin-bottom: 0.35em;
+  }
+
+
+  .pub-links a {
+    margin-right: 12px;
+    white-space: nowrap;
+  }
+
+  /* subtle divider */
+  .pub-divider {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    margin: 1.2em 0 0 0;
+  }
+</style>
+
+{% comment %}
+Helper renderer for one publication card.
+- Title is NOT a link by default.
+- If you want title clickable to the paper page, replace:
+    <div class="pub-title">{{ post.title }}</div>
+  with:
+    <div class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+{% endcomment %}
+
+{% if site.publication_category %}
+
+  {% for category in site.publication_category %}
+    <h2 style="margin-top: 1.2em;">{{ category[1].title }}</h2>
+    <hr />
+
+    {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+
+      <div class="pub-card">
+        <!-- Title (not clickable by default) -->
+        <div class="pub-title">{{ post.title }}</div>
+
+        <!-- Authors (one row) -->
+        {% if post.authors %}
+          <div class="pub-authors">
+            {{ post.authors }}
+          </div>
+        {% endif %}
+
+        <!-- Venue + Year (one row) -->
+        {% if post.venue or post.date %}
+          <div class="pub-venue">
+            {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+            {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+          </div>
+        {% endif %}
+
+        <!-- Links -->
+        <div class="pub-links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
+        </div>
+
+        <!-- Description -->
+        {% if post.excerpt %}
+          <div class="pub-desc">{{ post.excerpt }}</div>
+        {% endif %}
+
+        <!-- Figure (below description) -->
+        {% if post.images %}
+          <div class="pub-fig-grid">
+            {% for img in post.images %}
+              <img src="{{ img | relative_url }}" alt="{{ post.title }} figure {{ forloop.index }}">
+            {% endfor %}
+          </div>
+        {% elsif post.image %}
+          <div class="pub-fig">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </div>
+        {% endif %}
+
+        <hr class="pub-divider" />
+      </div>
+
     {% endfor %}
   {% endfor %}
+
 {% else %}
-  {% for post in site.presentations reversed %}
-    {% include archive-single.html %}
+
+  {% for post in site.publications reversed %}
+    <div class="pub-card">
+      <!-- Title (not clickable by default) -->
+      <div class="pub-title">{{ post.title }}</div>
+
+      <!-- Meta: Authors · Venue · Year -->
+      <!-- Authors (one row) -->
+      {% if post.authors %}
+        <div class="pub-authors">
+          {{ post.authors }}
+        </div>
+      {% endif %}
+
+      <!-- Venue + Year (one row) -->
+      {% if post.venue or post.date %}
+        <div class="pub-venue">
+          {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+          {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+        </div>
+      {% endif %}
+
+      <!-- Description -->
+      {% if post.excerpt %}
+        <div class="pub-desc">{{ post.excerpt }}</div>
+      {% endif %}
+
+      <!-- Figure (below description) -->
+      {% if post.image %}
+        <div class="pub-fig">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        </div>
+      {% endif %}
+
+      <!-- Links -->
+      <div class="pub-links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+        {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
+      </div>
+
+      <hr class="pub-divider" />
+    </div>
   {% endfor %}
+
 {% endif %}
-
-
-
