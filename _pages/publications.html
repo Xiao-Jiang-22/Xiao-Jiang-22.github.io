@@ -123,7 +123,14 @@ Helper renderer for one publication card.
           </div>
         {% endif %}
 
-
+        <!-- Links -->
+        <div class="pub-links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
+        </div>
+        
         <!-- Description -->
         {% if post.excerpt %}
           <div class="pub-desc">{{ post.excerpt }}</div>
@@ -135,14 +142,6 @@ Helper renderer for one publication card.
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
           </div>
         {% endif %}
-
-        <!-- Links -->
-        <div class="pub-links">
-          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
-          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
-          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
-          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
-        </div>
 
         <hr class="pub-divider" />
       </div>
