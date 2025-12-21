@@ -135,7 +135,7 @@ If you sometimes write "Jiang, X" on the site, add another replace line.
             {% if post.type %}{{ post.type }}{% endif %}
             {% if post.type and post.venue %} | {% endif %}
             {% if post.venue %}{{ post.venue }}{% endif %}
-            {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+            {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
           </div>
         {% endif %}
 
