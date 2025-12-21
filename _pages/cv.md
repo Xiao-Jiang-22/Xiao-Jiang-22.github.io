@@ -81,7 +81,7 @@ Supervisor: [Prof. Yidong Yang](https://fusep.ustc.edu.cn/2025/01/06/yidong-yang
 
 * **Research Assistant** <span style="float:right;">July 2017-Aug 2020</span>  
 Medical Physics Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
-Supervisor: [Dr. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
+Supervisor: [Prof. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
 
 <div style="margin-top: 1.5em;"></div>
 
