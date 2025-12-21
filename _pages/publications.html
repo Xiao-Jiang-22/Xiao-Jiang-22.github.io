@@ -133,7 +133,7 @@ Helper renderer for one publication card.
         {% if post.venue or post.date %}
           <div class="pub-venue">
             {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
-            {% if post.date %} · {{ post.date | date: "%Y" }}{% endif %}
+            {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
           </div>
         {% endif %}
 
