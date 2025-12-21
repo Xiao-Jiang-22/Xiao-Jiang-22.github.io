@@ -96,6 +96,12 @@ author_profile: true
     border-top: 1px solid rgba(0,0,0,0.08);
     margin: 1.2em 0 0 0;
   }
+
+  .pub-notes {
+    font-size: 0.85em;
+    font-weight: 700;
+  }
+
 </style>
 
 {% comment %}
@@ -134,6 +140,12 @@ Helper renderer for one publication card.
           <div class="pub-venue">
             {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
             {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
+          </div>
+        {% endif %}
+
+        {% if post.notes %}
+          <div class="pub-notes">
+            {{ post.notes }}
           </div>
         {% endif %}
 
