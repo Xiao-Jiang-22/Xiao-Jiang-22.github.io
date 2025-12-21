@@ -5,7 +5,7 @@ category: conferences
 date: 2025-04-08
 type: "Oral"
 authors: "Xiao Jiang, Grace J. Gang, J. Webster Stayman"
-venue: "SPIE Medical Imaging: Physics of Medical Imaging"
+venue: "7th International Conference on Image Formation in X-Ray Computed Tomography"
 paperurl: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13405/134051I/Joint-estimation-of-anatomy-and-implants-in-x-ray-CT/10.1117/12.3046496.full"
 ---
 
