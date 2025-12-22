@@ -20,8 +20,8 @@ redirect_from:
 * **B.S. in Physics** <span style="float:right;">2015-2019</span>  
 University of Science and Technology of China, Hefei, Anhui, China -->
 
-# Education
-
+Education
+======
 <div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
   <img src="../images/logo/jhu_logo.png"
        alt="Johns Hopkins University"

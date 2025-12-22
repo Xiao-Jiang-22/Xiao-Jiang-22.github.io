@@ -8,6 +8,6 @@ author_profile: true
 {% include base_path %}
 
 
-# CTorch package
-
+CTorch package
+======
 We developed CTorch, a PyTorch-compatible GPU-accelerated auto-differentiable projector toolbox for CT imaging research. This tool is open to the imaging community for non-commercial, non-profit research. Please see [arXiv paper](https://arxiv.org/abs/2503.16741) for detailed introduction, and [github repostory](https://github.com/JHU-AIAI-Shared/AIAI-CTorch) example usage and access request.
