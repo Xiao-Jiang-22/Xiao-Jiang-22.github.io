@@ -19,5 +19,5 @@ If you are interested in my work or would like to explore potential collaboratio
 
   <td align="center">
       <img src="../images/hometown.jpg"><br>
-      <strong>CTorch framework<strong>
+      <strong>My hometown, "Nest" Lake<strong>
   <td>
