@@ -15,7 +15,7 @@ We developed CTorch, a PyTorch-compatible GPU-accelerated auto-differentiable pr
 <table align="center">
   <tr>
     <td align="center">
-        <img src="../images/publications/2025-03-20.jpg" alt="framework" width="500"><br>
+        <img src="../images/publications/2025-03-20.jpg" alt="framework" width="400"><br>
         <strong>CTorch framework<strong>
     </td>
     <td align="center">
