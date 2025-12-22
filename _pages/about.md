@@ -17,7 +17,11 @@ Before coming to Hopkins, I spent seven years at [University of Science and Tech
 
 If you are interested in my work or would like to explore potential collaborations, please feel free to contact me at [xjiang43@jhu.edu](xjiang43@jhu.edu).
 
+<table align="center">
+  <tr>
   <td align="center">
       <img src="../images/hometown.jpg"><br>
       <strong>My hometown, "Nest" Lake<strong>
   <td>
+  <tr>
+<table>
