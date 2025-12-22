@@ -21,7 +21,7 @@ If you are interested in my work or would like to explore potential collaboratio
   <tr>
   <td align="center">
       <img src="../images/hometown.jpg"><br>
-      <strong>My hometown, "Nest" Lake<strong>
+      <strong style="font-size: 20px;">My hometown, "Nest" Lake</strong>
   <td>
   <tr>
 <table>
