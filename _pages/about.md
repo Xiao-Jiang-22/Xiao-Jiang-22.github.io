@@ -19,9 +19,14 @@ If you are interested in my work or would like to explore potential collaboratio
 
 <table align="center">
   <tr>
-  <td align="center">
+    <td align="center">
       <img src="../images/hometown.jpg"><br>
-      <strong style="font-size: 20px;">[My hometown](../images/joke.jpg), "Nest" Lake</strong>
-  <td>
-  <tr>
-<table>
+      <strong style="font-size: 20px;">
+        <a href="../images/joke.jpg"
+           style="text-decoration: none; color: inherit;">
+          My hometown
+        </a>, "Nest" Lake
+      </strong>
+    </td>
+  </tr>
+</table>
