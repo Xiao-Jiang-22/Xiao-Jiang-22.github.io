@@ -17,12 +17,13 @@ Before coming to Hopkins, I spent seven years at [University of Science and Tech
 
 If you are interested in my work or would like to explore potential collaborations, please feel free to contact me at [xjiang43@jhu.edu](xjiang43@jhu.edu).
 
-  <td align="center">
-    <img src="../images/hometown.jpg"><br>
-    <strong style="font-size: 20px;">
-      <a href="../images/joke.jpg"
-          style="text-decoration: none; color: inherit;">
-        My hometown,
-      </a>"Nest" Lake
-    </strong>
-  </td>
+<td align="center">
+  <img src="../images/hometown.jpg"><br>
+  <div style="font-size: 20px; text-align: center; font-weight: bold;">
+    <a href="../images/joke.jpg"
+       style="text-decoration: none; color: inherit;">
+      My hometown, "Nest" Lake
+    </a>
+  </div>
+</td>
+
