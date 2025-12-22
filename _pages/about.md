@@ -24,8 +24,8 @@ If you are interested in my work or would like to explore potential collaboratio
       <strong style="font-size: 20px;">
         <a href="../images/joke.jpg"
            style="text-decoration: none; color: inherit;">
-          My hometown
-        </a>, "Nest" Lake
+          My hometown,
+        </a>"Nest" Lake
       </strong>
     </td>
   </tr>
