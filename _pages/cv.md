@@ -11,7 +11,7 @@ redirect_from:
 
 <!-- Education
 ======
-* **Ph.D in Biomedical Engineering** <span style="float:right;">2022-present</span>  
+* **Ph.D in Biomedical Engineering** <span style="float:right;">2022-2026</span>  
   [Johns Hopkins University](https://www.jhu.edu/), Baltimore, MD, USA 
 
 * **M.S. in Physics** <span style="float:right;">2019-2022</span>  
@@ -29,7 +29,7 @@ Education
   <div style="flex:1;">
     <div style="display:flex; align-items:baseline; gap:12px;">
       <strong>Ph.D. in Biomedical Engineering</strong>
-      <span style="margin-left:auto;">2022–present</span>
+      <span style="margin-left:auto;">2022–2026</span>
     </div>
     <div>
       <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a>, Baltimore, MD, USA
