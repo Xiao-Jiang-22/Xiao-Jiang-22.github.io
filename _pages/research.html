@@ -1,0 +1,34 @@
+---
+layout: archive
+content_class: research-content
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="research-tabs" role="tablist" aria-label="Research categories">
+  <button type="button" id="publications-tab" role="tab" aria-controls="publications" aria-selected="true">Publications</button>
+  <button type="button" id="presentations-tab" role="tab" aria-controls="presentations" aria-selected="false" tabindex="-1">Presentations</button>
+  <button type="button" id="tools-tab" role="tab" aria-controls="tools" aria-selected="false" tabindex="-1">Tools</button>
+</div>
+<noscript><style>.research-tabs { display: none; }</style></noscript>
+
+<section id="publications" class="research-panel research-publications" aria-labelledby="publications-heading">
+  <h2 id="publications-heading" class="research-section-heading">Publications</h2>
+  {% include publications-list.html %}
+</section>
+
+<section id="presentations" class="research-panel research-presentations" aria-labelledby="presentations-heading">
+  <h2 id="presentations-heading" class="research-section-heading">Presentations</h2>
+  {% include presentations-list.html %}
+</section>
+
+<section id="tools" class="research-panel research-tools" aria-labelledby="tools-heading">
+  <h2 id="tools-heading" class="research-section-heading">Tools</h2>
+  {% capture tools_content %}{% include research-tools.md %}{% endcapture %}
+  {{ tools_content | markdownify }}
+</section>
+
+<script src="{{ '/assets/js/research-tabs.js' | relative_url }}"></script>

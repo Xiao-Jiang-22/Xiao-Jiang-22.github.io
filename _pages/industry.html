@@ -1,0 +1,42 @@
+---
+layout: archive
+title: "Industry"
+permalink: /industry/
+excerpt: "Holoscale, Inc. — accurate system calibration, advanced image reconstruction, and novel imaging system design for industrial CT."
+author_profile: true
+author_email: "xiao@holoscale.co"
+---
+
+<div class="industry-content industry-brief">
+  <header class="industry-hero">
+    <div class="industry-company-row">
+      <a class="industry-company" href="https://holoscale.co/" aria-label="Holoscale, Inc. website">
+        <img src="{{ '/images/logo/holoscale-lockup-horizontal-black.svg' | relative_url }}" alt="Holoscale, Inc." width="200" height="46">
+      </a>
+      <p class="industry-byline">Co-founder <span aria-hidden="true">/</span> Baltimore, MD</p>
+    </div>
+
+    <ul class="industry-capabilities" aria-label="Holoscale focus areas">
+      <li><strong>Accurate</strong><span>System calibration</span></li>
+      <li><strong>Advanced</strong><span>Image reconstruction</span></li>
+      <li><strong>Novel</strong><span>Imaging system design</span></li>
+    </ul>
+
+    <section class="ct-comparisons" aria-label="Industrial CT image comparisons">
+      {% include ct-comparison.html id="robotic-ct" title="Robotic CT" before="/images/industry/robotic-ct-before.png" after="/images/industry/robotic-ct-after.png" %}
+      {% include ct-comparison.html id="multi-material-assembly" title="Multi-material assembly" before="/images/industry/multi-material-assembly-before.png" after="/images/industry/multi-material-assembly-after.png" %}
+    </section>
+
+    <p class="industry-summary">I co-founded <strong>Holoscale, Inc.</strong> in 2026 to develop advanced X-ray imaging software for industrial CT. Our software is designed to improve reconstruction accuracy and support faster, more flexible scanning across conventional and robotic CT systems, helping meet modern manufacturing’s demand for reliable, high-throughput inspection. We are developing our technology with support from the <strong>Maryland Innovation Initiative (MII)</strong> and the <strong>Johns Hopkins President’s Venture Fellowship (PVF)</strong>.</p>
+    <p class="industry-status"><strong>Stay tuned.</strong> More information coming soon.</p>
+
+    <nav class="industry-links" aria-label="Holoscale company links">
+      <a href="https://holoscale.co/">Company website <span aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/company/holoscale">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="mailto:xiao@holoscale.co">Email <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+</div>
+
+<script src="{{ "/assets/js/ct-comparison.js" | relative_url }}" defer></script>

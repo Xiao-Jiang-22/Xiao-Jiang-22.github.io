@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Xiao Jiang's Personal Website"
 title_separator          : "-"
 name                     : &name "Xiao Jiang (姜潇)"
-description              : &description "PhD Student at Johns Hopkins University"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Co-founder of Holoscale, Inc. and postdoctoral researcher at Johns Hopkins University"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://xiao-jiang.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Xiao Jiang"
   pronouns         : # example: "she/her"  
-  bio              : "PhD @ JHU BME<br>MS/BS @ USTC Phys"
+  bio              : "Co-founder @ Holoscale, Inc.<br>Postdoc @ JHU SOM<br>PhD @ JHU BME<br>MS/BS @ USTC Physics"
   location         : "Baltimore, MD, USA"
   employer         : "Johns Hopkins University"
   uri              : # URL

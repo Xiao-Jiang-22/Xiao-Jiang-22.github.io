@@ -1,5 +1,6 @@
 ---
 layout: archive
+content_class: cv-content
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -9,130 +10,130 @@ redirect_from:
 
 {% include base_path %}
 
-<!-- Education
-======
-* **Ph.D in Biomedical Engineering** <span style="float:right;">2022-2026</span>  
-  [Johns Hopkins University](https://www.jhu.edu/), Baltimore, MD, USA 
-
-* **M.S. in Physics** <span style="float:right;">2019-2022</span>  
-  [University of Science and Technology of China](https://www.ustc.edu.cn/), Hefei, Anhui, China
-
-* **B.S. in Physics** <span style="float:right;">2015-2019</span>  
-University of Science and Technology of China, Hefei, Anhui, China -->
-
-Education
-======
-<div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
-  <img src="../images/logo/jhu_logo.png"
-       alt="Johns Hopkins University"
-       style="width:52px; height:auto; margin-top:4px;">
-  <div style="flex:1;">
-    <div style="display:flex; align-items:baseline; gap:12px;">
-      <strong>Ph.D. in Biomedical Engineering</strong>
-      <span style="margin-left:auto;">2022–2026</span>
+## Professional Experience
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo cv-experience-logo--holoscale">
+    <img src="{{ '/images/logo/holoscale-lockup-horizontal-black.svg' | relative_url }}" alt="Holoscale, Inc.">
+  </div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading">
+      <strong>Co-founder</strong>
+      <span>Oct 2026–present</span>
     </div>
-    <div>
-      <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a>, Baltimore, MD, USA
-    </div>
+    <div>Holoscale, Inc., Baltimore, MD, USA</div>
+    <div>Developing advanced reconstruction software for fast, flexible, and intelligent industrial X-ray CT imaging.</div>
   </div>
 </div>
 
-<div style="display:flex; align-items:flex-start; gap:14px; margin-bottom:1.0em;">
-  <img src="../images/logo/ustc_logo.png"
-       alt="University of Science and Technology of China"
-       style="width:52px; height:auto; margin-top:4px;">
-  <div style="flex:1;">
-    <div style="display:flex; align-items:baseline; gap:12px;">
-      <strong>M.S. in Physics</strong>
-      <span style="margin-left:auto;">2019–2022</span>
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo">
+    <img src="{{ '/images/logo/jhu_logo.png' | relative_url }}" alt="Johns Hopkins University">
+  </div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading">
+      <strong>Postdoctoral Researcher</strong>
+      <span>Sep 2026–present</span>
     </div>
-    <div>
-      <a href="https://www.ustc.edu.cn/" target="_blank">University of Science and Technology of China</a>, Hefei, Anhui, China
-    </div>
+    <div><a href="https://aiai.jhu.edu/">Advanced Imaging Algorithms and Instrumentation Laboratory</a>, Johns Hopkins University, Baltimore, MD, USA</div>
+    <div>Supervisor: Prof. J. Webster Stayman</div>
   </div>
 </div>
 
-<div style="display:flex; align-items:flex-start; gap:14px;">
-  <img src="../images/logo/ustc_logo.png"
-       alt="University of Science and Technology of China"
-       style="width:52px; height:auto; margin-top:4px;">
-  <div style="flex:1;">
-    <div style="display:flex; align-items:baseline; gap:12px;">
-      <strong>B.S. in Physics</strong>
-      <span style="margin-left:auto;">2015–2019</span>
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo">
+    <img src="{{ '/images/logo/jhu_logo.png' | relative_url }}" alt="Johns Hopkins University">
+  </div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading">
+      <strong>Research Assistant</strong>
+      <span>May 2022–Aug 2026</span>
     </div>
-    <div>
-      University of Science and Technology of China, Hefei, Anhui, China
-    </div>
+    <div>Advanced Imaging Algorithms and Instrumentation Laboratory, Johns Hopkins University, Baltimore, MD, USA</div>
+    <div>Supervisor: Prof. J. Webster Stayman</div>
   </div>
 </div>
-<div style="margin-top: 1.5em;"></div>
+
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo">
+    <img src="{{ '/images/logo/ustc_logo.png' | relative_url }}" alt="University of Science and Technology of China">
+  </div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading">
+      <strong>Research Assistant</strong>
+      <span>Aug 2020–May 2022</span>
+    </div>
+    <div>Precision Radiotherapy Laboratory, University of Science and Technology of China, Hefei, Anhui, China</div>
+    <div>Supervisor: <a href="https://fusep.ustc.edu.cn/2025/01/06/yidong-yang/">Prof. Yidong Yang</a></div>
+  </div>
+</div>
+
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo">
+    <img src="{{ '/images/logo/ustc_logo.png' | relative_url }}" alt="University of Science and Technology of China">
+  </div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading">
+      <strong>Research Assistant</strong>
+      <span>July 2017–Aug 2020</span>
+    </div>
+    <div>Medical Physics Laboratory, University of Science and Technology of China, Hefei, Anhui, China</div>
+    <div>Supervisor: <a href="https://cn.linkedin.com/in/lei-zhu-5a06566b">Prof. Lei Zhu</a></div>
+  </div>
+</div>
 
 
-Professional Experience
-======
-* **Research Assistant** <span style="float:right;">May 2022-present</span>  
-[Advanced Imaging Algorithms and Instrumentation Laboratory](https://aiai.jhu.edu/), Johns Hopkins University, Baltimore, MD, USA 
-Supervisor: [Prof. J. Webster Stayman](https://www.bme.jhu.edu/people/faculty/j-webster-stayman/)
 
-* **Research Assistant** <span style="float:right;">Aug 2020-May 2022</span>  
-Precision Radiotherapy Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
-Supervisor: [Prof. Yidong Yang](https://fusep.ustc.edu.cn/2025/01/06/yidong-yang/)
+## Education
 
-* **Research Assistant** <span style="float:right;">July 2017-Aug 2020</span>  
-Medical Physics Laboratory, University of Science and Technology of China, Hefei, Anhui, China  
-Supervisor: [Prof. Lei Zhu](https://cn.linkedin.com/in/lei-zhu-5a06566b)
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo"><img src="{{ '/images/logo/jhu_logo.png' | relative_url }}" alt="Johns Hopkins University"></div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading"><strong>Ph.D. in Biomedical Engineering</strong><span>2022–2026</span></div>
+    <div>Johns Hopkins University, Baltimore, MD, USA</div>
+  </div>
+</div>
 
-<div style="margin-top: 1.5em;"></div>
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo"><img src="{{ '/images/logo/ustc_logo.png' | relative_url }}" alt="University of Science and Technology of China"></div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading"><strong>M.S. in Physics</strong><span>2019–2022</span></div>
+    <div>University of Science and Technology of China, Hefei, Anhui, China</div>
+  </div>
+</div>
 
-Review Activities
-======
+<div class="cv-experience-entry">
+  <div class="cv-experience-logo"><img src="{{ '/images/logo/ustc_logo.png' | relative_url }}" alt="University of Science and Technology of China"></div>
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading"><strong>B.S. in Physics</strong><span>2015–2019</span></div>
+    <div>University of Science and Technology of China, Hefei, Anhui, China</div>
+  </div>
+</div>
+
+## Review Activities
 * [IEEE Transactions on Medical Imaging](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)  
 * [IEEE Transactions on Biomedical Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10)  
 * [IEEE Transactions on Nuclear Science](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=23)  
+* [IEEE Transactions on Computational Imaging](https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging)
+* [IEEE Transactions on Radiation and Plasma Medical Sciences](https://ieee-npss.org/publications/transactions-on-radiation-and-plasma-medical-sciences/)
 * [Medical Physics](https://aapm.onlinelibrary.wiley.com/journal/24734209)  
 * [Artificial Intelligence in Medicine](https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine)
+* [Scientific Reports](https://www.nature.com/srep/)
 
-<div style="margin-top: 1.5em;"></div>
 
-Teaching Experience
-======
-* **Teaching Assistant** <span style="float:right;">Aug 2025-Dec 2025</span>  
-Johns Hopkins University, Baltimore, MD, USA  
-Course: Physics of Medical Imaging  
 
-* **Teaching Assistant** <span style="float:right;">Aug 2017-June 2021</span>  
-University of Science and Technology of China, Hefei, Anhui, China  
-Courses: Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems  
+## Teaching Experience
 
-  
-<!-- Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3 -->
-
-<!-- Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
-<!-- Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+<div class="cv-experience-entry cv-experience-entry--teaching">
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading"><strong>Teaching Assistant</strong><span>Aug–Dec 2025</span></div>
+    <div>Johns Hopkins University, Baltimore, MD, USA</div>
+    <div>Course: Physics of Medical Imaging</div>
+  </div>
+</div>
+<div class="cv-experience-entry cv-experience-entry--teaching">
+  <div class="cv-experience-content">
+    <div class="cv-experience-heading"><strong>Teaching Assistant</strong><span>Aug 2017–June 2021</span></div>
+    <div>University of Science and Technology of China, Hefei, Anhui, China</div>
+    <div>Courses: Mechanics, Optics, Atomics, Linear Algebra, Medical Imaging Systems</div>
+  </div>
+</div>

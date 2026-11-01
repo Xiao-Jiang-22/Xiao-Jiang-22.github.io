@@ -3,23 +3,24 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+      <nav id="site-nav" class="site-navigation" aria-label="Main navigation">
+        <a class="site-brand" href="{{ base_path }}/" aria-label="Xiao Jiang — Home" title="Xiao × X-ray · Home"{% if page.url == '/' %} aria-current="page"{% endif %}>
+          <img class="site-brand__mark" src="{{ '/images/logo/xiao-x-spine-battery.png' | relative_url }}" alt="" width="64" height="64">
+          <span class="site-brand__name" aria-hidden="true">iao</span>
+        </a>
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation-links">
+          <span>Menu</span><span class="site-nav-toggle__icon" aria-hidden="true"></span>
+        </button>
+        <ul class="site-nav__links" id="site-navigation-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li><a class="site-nav__link" href="{{ domain }}{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}><span class="site-nav__label" data-label="{{ link.title }}">{{ link.title }}<span class="site-nav__scan" aria-hidden="true">{{ link.title }}</span></span></a></li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

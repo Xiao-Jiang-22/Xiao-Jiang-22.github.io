@@ -12,10 +12,10 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div id="main" class="profile-layout" role="main">
   {% include sidebar.html %}
 
-  <div class="archive">
+  <div class="archive {{ page.content_class }}">
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 class="page__title">{{ page.title }}</h1>
     {% endunless %}

@@ -1,0 +1,133 @@
+{% assign ordered_records = site.publications | sort: 'date' | reverse %}
+
+
+{% comment %}
+Helper renderer for one publication card.
+- Title is NOT a link by default.
+- If you want title clickable to the paper page, replace:
+    <h3 class="pub-title">{{ post.title }}</h3>
+  with:
+    <div class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+{% endcomment %}
+
+{% if site.publication_category %}
+
+  {% for category in site.publication_category %}
+    {% assign category_records = ordered_records | where: 'category', category[0] %}
+    {% if category_records == empty %}{% continue %}{% endif %}
+    <h2 class="research-category">{{ category[1].title }}</h2>
+
+    {% for post in ordered_records %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+
+      <div class="pub-card">
+        <!-- Title (not clickable by default) -->
+        <h3 class="pub-title">{{ post.title }}</h3>
+
+        <!-- Authors (one row) -->
+        {% if post.authors %}
+          <div class="pub-authors">
+            {{ post.authors }}
+          </div>
+        {% endif %}
+
+        <!-- Venue + Year (one row) -->
+        {% if post.venue or post.date %}
+          <div class="pub-venue">
+            {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+            {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
+          </div>
+        {% endif %}
+
+        {% if post.notes %}
+          <div class="pub-notes">
+            {{ post.notes }}
+          </div>
+        {% endif %}
+
+        <!-- Links -->
+        <div class="pub-links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+          {% if post.preprinturl %}<a href="{{ post.preprinturl }}" target="_blank">Preprint</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
+        </div>
+
+        <!-- Description -->
+        {% assign excerpt_text = post.excerpt | strip_html | strip %}
+        {% if excerpt_text != empty %}
+          <details class="pub-abstract"><summary>Abstract</summary><div class="pub-desc">{{ post.excerpt }}</div></details>
+        {% endif %}
+
+        <!-- Figure (below description) -->
+        {% if post.images %}
+          <div class="pub-fig-grid">
+            {% for img in post.images %}
+              <a class="research-figure-link" href="{{ img | relative_url }}" target="_blank" rel="noopener" title="View figure at full size"><img loading="lazy" src="{{ img | relative_url }}" alt="{{ post.title }} figure {{ forloop.index }}"></a>
+            {% endfor %}
+          </div>
+        {% elsif post.image %}
+          <div class="pub-fig">
+            <a class="research-figure-link" href="{{ post.image | relative_url }}" target="_blank" rel="noopener" title="View figure at full size"><img loading="lazy" src="{{ post.image | relative_url }}" alt="{{ post.title }}"></a>
+          </div>
+        {% endif %}
+
+        <hr class="pub-divider" />
+      </div>
+
+    {% endfor %}
+  {% endfor %}
+
+{% else %}
+
+  {% for post in ordered_records %}
+    <div class="pub-card">
+      <!-- Title (not clickable by default) -->
+      <h3 class="pub-title">{{ post.title }}</h3>
+
+      <!-- Meta: Authors · Venue · Year -->
+      <!-- Authors (one row) -->
+      {% if post.authors %}
+        <div class="pub-authors">
+          {{ post.authors }}
+        </div>
+      {% endif %}
+
+      <!-- Venue + Year (one row) -->
+      {% if post.venue or post.date %}
+        <div class="pub-venue">
+          {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}
+          {% if post.date %} | {{ post.date | date: "%Y" }}{% endif %}
+        </div>
+      {% endif %}
+
+      <!-- Description -->
+      {% assign excerpt_text = post.excerpt | strip_html | strip %}
+        {% if excerpt_text != empty %}
+        <details class="pub-abstract"><summary>Abstract</summary><div class="pub-desc">{{ post.excerpt }}</div></details>
+      {% endif %}
+
+      <!-- Figure (below description) -->
+      {% if post.image %}
+        <div class="pub-fig">
+          <a class="research-figure-link" href="{{ post.image | relative_url }}" target="_blank" rel="noopener" title="View figure at full size"><img loading="lazy" src="{{ post.image | relative_url }}" alt="{{ post.title }}"></a>
+        </div>
+      {% endif %}
+
+      <!-- Links -->
+      <div class="pub-links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+        {% if post.preprinturl %}<a href="{{ post.preprinturl }}" target="_blank">Preprint</a>{% endif %}
+        {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank">Code</a>{% endif %}
+        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank">BibTeX</a>{% endif %}
+      </div>
+
+      <hr class="pub-divider" />
+    </div>
+  {% endfor %}
+
+{% endif %}

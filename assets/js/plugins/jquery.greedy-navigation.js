@@ -1,86 +1,47 @@
-/*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
-*/
+/* Responsive navigation and a compact header. No hover is needed to navigate. */
+(function () {
+  'use strict';
+  var nav = document.getElementById('site-nav');
+  if (!nav) return;
+  var header = document.querySelector('.masthead');
+  var toggle = nav.querySelector('.site-nav-toggle');
+  var links = nav.querySelector('.site-nav__links');
+  var mobile = window.matchMedia('(max-width: 640px)');
+  var scheduled = false;
+  nav.setAttribute('data-enhanced', 'true');
 
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
-var $hlinks = $('#site-nav .hidden-links');
-
-var breaks = [];
-
-function updateNav() {
-
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-  // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
-
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
-      // Record the width of the list
-      breaks.push($vlinks.width());
-
-      // Move item to the hidden list
-      $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
-
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-      // Show the dropdown btn
-      $btn.removeClass("hidden");
-    }
-
-    // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
-      // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
-      }
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if (breaks.length < 1) {
-      $btn.addClass('hidden');
-      $btn.removeClass('close');
-      $hlinks.addClass('hidden');
-    }
+  function setOpen(open, restoreFocus) {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    if (restoreFocus) toggle.focus();
   }
+  toggle.addEventListener('click', function () {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true', false);
+  });
+  links.addEventListener('click', function (event) {
+    if (event.target.closest('a')) setOpen(false, false);
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && nav.classList.contains('is-open')) setOpen(false, true);
+  });
+  document.addEventListener('click', function (event) {
+    if (!nav.contains(event.target)) setOpen(false, false);
+  });
+  nav.addEventListener('focusout', function (event) {
+    if (event.relatedTarget && !nav.contains(event.relatedTarget)) setOpen(false, false);
+  });
+  mobile.addEventListener('change', function () { setOpen(false, false); });
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
-
-  // update masthead height and the body/sidebar top padding
-  var mastheadHeight = $('.masthead').height();
-  $('body').css('padding-top', mastheadHeight + 'px');
-  if ($(".author__urls-wrapper button").is(":visible")) {
-    $(".sidebar").css("padding-top", "");
-  } else {
-    $(".sidebar").css("padding-top", mastheadHeight + "px");
+  function updateHeader() {
+    var compact = header.classList.contains('is-compact');
+    header.classList.toggle('is-compact', compact ? window.scrollY > 32 : window.scrollY > 80);
+    scheduled = false;
   }
-
-}
-
-// Window listeners
-
-$(window).on('resize', function () {
-  updateNav();
-});
-screen.orientation.addEventListener("change", function () {
-  updateNav();
-});
-
-$btn.on('click', function () {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-});
-
-updateNav();
+  window.addEventListener('scroll', function () {
+    if (!scheduled) {
+      scheduled = true;
+      window.requestAnimationFrame(updateHeader);
+    }
+  }, { passive: true });
+  updateHeader();
+})();
