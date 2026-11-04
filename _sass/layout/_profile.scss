@@ -185,9 +185,9 @@
   background: #fff;
   border-top-color: #dfe6ea;
   color: #657581;
-  footer { max-width: 1200px; margin-top: 0; padding: 20px 32px; }
+  footer { max-width: var(--profile-frame-max); margin-top: 0; padding: 20px 16px; }
 }
 .page__footer-copyright { font-size: 12px; }
 @media (max-width: 640px) {
-  .page__footer footer { padding: 18px 24px; }
+  .page__footer footer { padding: 18px 12px; }
 }
