@@ -78,6 +78,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #526f80; outline-off
   .home-timeline__content h3 { margin: 0; font-size: 21px; line-height: 1.35; }
   .home-timeline__content p { margin: 12px 0 0; font-size: 17px; line-height: 1.7; }
 }
+img.home-timeline__logo { flex-basis: 46px; width: 46px; height: auto; }
 .home-content #get-in-touch { border-top: 1px solid var(--profile-rule); padding-top: 32px; }
 
 /* CV: one row treatment for appointments, education, and teaching. */
@@ -212,6 +213,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #526f80; outline-off
     &__logo, &__logo--holoscale img { height: 32px; }
     &__logo { width: 32px; flex-basis: 32px; }
   }
+  img.home-timeline__logo { flex-basis: 36px; width: 36px; }
   .cv-experience-entry { gap: 14px; margin-bottom: 26px; }
   .cv-experience-logo { flex-basis: 36px; width: 36px; }
   .cv-experience-logo img { width: 36px; }
