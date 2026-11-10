@@ -61,7 +61,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #526f80; outline-off
 }
 
 /* Home: quiet chronology, with roles and institutions carrying the emphasis. */
-.home-introduction { max-width: 46em; }
+.home-introduction { max-width: none; }
 .home-timeline {
   margin: 28px 0 0;
   > li { grid-template-columns: 130px minmax(0, 1fr); gap: 24px; padding-bottom: 36px; }
