@@ -12,7 +12,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" class="profile-layout" role="main">
+<div id="main" class="profile-layout{% if page.content_class == 'home-content' %} home-layout{% endif %}" role="main">
   {% include sidebar.html %}
 
   <div class="archive {{ page.content_class }}">
