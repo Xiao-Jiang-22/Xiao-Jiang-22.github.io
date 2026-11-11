@@ -75,20 +75,20 @@ img.home-timeline__logo { flex-basis: 46px; width: 46px; height: auto; }
 .home-timeline__logo--holoscale img { height: 46px; }
 .home-content #get-in-touch { border-top: 1px solid var(--profile-rule); padding-top: 32px; }
 
-/* Keep the complete career timeline in view on desktop. */
+/* Reduce desktop section gaps while preserving the original typography. */
 @media (min-width: 925px) {
-  #main.home-layout { margin-top: 16px; }
+  #main.home-layout { margin-top: 20px; }
   .home-layout .home-content {
-    .page__title { margin-bottom: 12px; font-size: 32px; }
-    .home-introduction { margin-bottom: 0; font-size: 16px; line-height: 1.45; }
-    h2 { margin: 18px 0 14px; font-size: 24px; }
+    .page__title { margin-bottom: 16px; }
+    .home-introduction { margin-bottom: 0; }
+    h2 { margin: 20px 0 16px; }
     .home-timeline {
-      margin-top: 14px;
-      > li { padding-bottom: 16px; }
+      margin-top: 16px;
+      > li { padding-bottom: 18px; }
+      > li:last-child { padding-bottom: 0; }
       .home-timeline__date { margin: 0; }
       .home-timeline__logos { margin-top: 12px; }
-      .home-timeline__content h3 { font-size: 19px; line-height: 1.3; }
-      .home-timeline__content p { margin-top: 6px; font-size: 16px; line-height: 1.45; }
+      .home-timeline__content p { margin-top: 8px; }
     }
     #get-in-touch { margin-top: 26px; padding-top: 22px; }
   }
