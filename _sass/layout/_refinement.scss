@@ -28,7 +28,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #526f80; outline-off
   gap: 56px;
   width: 100%;
   max-width: var(--profile-frame-max);
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   padding: 0 16px;
   &::after { display: none; }
   > .archive { float: none; width: auto; min-width: 0; padding: 0; margin: 0 0 64px; }
@@ -77,7 +77,6 @@ img.home-timeline__logo { flex-basis: 46px; width: 46px; height: auto; }
 
 /* Reduce desktop section gaps while preserving the original typography. */
 @media (min-width: 925px) {
-  #main.home-layout { margin-top: 20px; }
   .home-layout .home-content {
     .page__title { margin-bottom: 16px; }
     .home-introduction { margin-bottom: 0; }
