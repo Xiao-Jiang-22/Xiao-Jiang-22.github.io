@@ -25,7 +25,7 @@ I’m Xiao Jiang (姜潇), an X-ray imaging researcher and engineer. I am a co-f
     </div>
     <div class="home-timeline__content">
       <h3>Commercializing Reconstruction Software for Industrial X-ray Imaging</h3>
-      <p>I co-founded <strong>Holoscale, Inc.</strong> in 2026 to develop advanced X-ray imaging software for industrial CT. Our software is designed to improve reconstruction accuracy and support faster, more flexible scanning across conventional and robotic CT systems, helping meet modern manufacturing’s demand for reliable, high-throughput inspection. We are developing our technology with support from the <strong><a href="https://www.tedcomd.com/mii">Maryland Innovation Initiative (MII)</a></strong> and the <strong><a href="https://pavacenter.jhu.edu/programs/student-programs/blaze/presidents-venture-fellowship/">Johns Hopkins President’s Venture Fellowship (PVF)</a></strong>. <a href="{{ '/industry/' | relative_url }}">See my startup</a>.</p>
+      <p>I co-founded <strong>Holoscale, Inc.</strong> to develop advanced reconstruction software for <strong>fast, flexible, and intelligent industrial X-ray CT imaging.</strong> The company has received funding from Johns Hopkins University’s <a href="https://pavacenter.jhu.edu/programs/student-programs/blaze/presidents-venture-fellowship/">President’s Venture Fellowship (PVF)</a> and the <a href="https://www.tedcomd.com/mii">Maryland Innovation Initiative (MII)</a>. <a href="{{ '/industry/' | relative_url }}">See my startup</a>.</p>
     </div>
   </li>
   <li>
